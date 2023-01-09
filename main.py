@@ -23,14 +23,16 @@ def main():
 
 def insertID():
   ID = str
-  ID = str(caso.nombre[0:2] + str(caso.fecha[0:2]))
+  ID = str(caso.nombre[0:2]) + str(caso.fecha[0:2])+ str(caso.nombre[2:3])
   print(type(ID))
   return ID
 def insertnombre(name):
   caso.nombre = name
 
 def insertfecha(fecha):
-  caso.fecha = fecha
+  f =fecha
+  caso.fecha = f
+  return f
 
 def insertdesc(desc):
   caso.descripcion = desc
